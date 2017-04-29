@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Task12.Models.Towar>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">Menu</p>
+            <div class="list-group">
+                <a href="http://miuki.info/2013/08/kakie-byvayut-sushi-i-rolly/" class="list-group-item">Суши (15)</a>
+                <a href="http://volshebnaya-eda.ru/kulinarnyj-klass/enciklopedii/vidy-piccy/" class="list-group-item">Пицца (21)</a>
+                <a href="http://onigiri.ru/menu/list.php?SECTION_ID=93" class="list-group-item">Роллы (37)</a>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="row carousel-holder">
+
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="slide-image" src="https://sushiaziya.ru/wp-content/uploads/2016/12/2.jpg" alt="suret 1">
+                            </div>
+                            <div class="item">
+                                <img class="slide-image" src="http://trapeza-cafe.ru/wp-content/uploads/2017/01/Trapeza111.jpg" alt="suret 2">
+                            </div>
+                            <div class="item">
+                                <img class="slide-image" src="http://cs-msk-fd-4.ykt2.ru/media/upload/photo/2015/02/09/8marta_dnevniki_800x300_feb2015.jpeg" alt="suret 3">
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="@item.url" alt="sushiPicture">
+                            <div class="caption">
+                                <h4 class="pull-right">@item.price</h4>
+                                <h4>
+                                    <a href="#">@item.name</a>
+                                </h4>
+                                <p>@item.description</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                } 
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div class="container">
+
+</div>

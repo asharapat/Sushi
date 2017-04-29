@@ -1,0 +1,12 @@
+﻿User-agent: Yandex
+Host: http://sushilar.azurewebsites.net
+
+User-agent: Googlebot
+
+User-agent: Mail.RU_Bot
+
+User-agent: *
+Crawl-delay: 10 
+
+
+Sitemap: http://sushilar.azurewebsites.net/sitemap.xml
