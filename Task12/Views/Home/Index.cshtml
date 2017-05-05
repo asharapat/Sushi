@@ -11,13 +11,15 @@
     <div class="row">
 
         <div class="col-md-3">
-            <p class="lead">Menu</p>
+            <p class="lead">Заказать суши с доставкой на дом</p>
             <div class="list-group">
-                <a href="http://miuki.info/2013/08/kakie-byvayut-sushi-i-rolly/" class="list-group-item">Суши (15)</a>
-                <a href="http://volshebnaya-eda.ru/kulinarnyj-klass/enciklopedii/vidy-piccy/" class="list-group-item">Пицца (21)</a>
-                <a href="http://onigiri.ru/menu/list.php?SECTION_ID=93" class="list-group-item">Роллы (34)</a>
+                <p>Качество продуктов. Доставка продуктов в наши суши-бары происходит ежедневно, этим обусловлена исключительная свежесть наших суши и роллов.</p>
+                <p>Доступность и удобство. Многие суши-бары находятся в прикассовых зонах супермаркетов, поэтому пока вы делаете покупки в магазине, мы приготовим ваш заказ. Также вы можете сделать заказ к удобному для вас времени</p>
+                <p>Заказ на доставку можно сделать по многоканальному телефону, через сайт или мобильное приложение ежедневно с 10:00 до 23:00.</p>
+                <p>Качество приготовления. Генеральный директор СушиStore, когда-то сам работал шеф-поваром, поэтому все сотрудники СушиStore настоящие профессионалы и фанаты своего дела. Секрет вкуса наших блюд кроется в основательной разработке рецептуры, строгому следованию технологии приготовления и свежайших продуктах, на чем основана японская кухня.</p>
             </div>
         </div>
+
 
         <div class="col-md-9">
 
@@ -67,13 +69,10 @@
                             </div>
                             <div class="ratings">
                                 <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
+                                <button class="btn btn-primary" type="button">
+                                    @Html.ActionLink("Заказать", "Contact", "Home", new { @class = "my-class" })
+                                </button>
+                                @*@Html.ActionLink("Контакты", "Contact", "Home")*@
                             </div>
                         </div>
                     </div>

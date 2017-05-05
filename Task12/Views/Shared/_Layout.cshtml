@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://sushistore.ru/favicon.ico" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script type="text/javascript" src="https://vk.com/js/api/share.js?94" charset="windows-1251"></script>
     <meta name="yandex-verification" content="d1cfb4340b76ec89" />
     <meta name="google-site-verification" content="Ht9RD6E2qOxQmsAtyYRfhBmO1GysgZcjEC4vrCbYf9U" />
-    <meta name="description" content="лучшие суши,пицца города Алматы и не только =), хочешь быть здоровым - ешь суши, хочешь быть успешным - ешь суши!"/>    
+    <meta name="description" content="Доставка #Сушилар уже готова к исполнению ваших желании, заказывайте дешевые суши, для студентов скидка"/>    
     <meta name="keywords" content="зож,спортпит,японская кухня, суши, Алматы, лучшие суши СНГ" />
 
 </head>
@@ -31,9 +31,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Продукты", "Index", "Home")</li>
                     <li>@Html.ActionLink("Админка", "Index", "Towars")</li>
-                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @*@Html.Partial("_LoginPartial")*@
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -43,7 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Sushi by Ali Shogun</p>
+            <p>&copy; @DateTime.Now.Year - Sushi by <a href="http://gmail.com">alikhan.sharapat@gmail.com</a></p>
             <!-- Yandex.Metrika informer -->
             <a href="https://metrika.yandex.ru/stat/?id=44474713&amp;from=informer"
                target="_blank" rel="nofollow">
@@ -143,12 +142,6 @@
             </script>
             <!-- End ZERO.kz -->
 
-
-
-            <script type="text/javascript">
-                document.write(VK.Share.button(false,{type: "round", text: "Сохранить"}));
-            </script>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

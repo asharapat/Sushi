@@ -207,24 +207,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\SushiModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SushiModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SushiModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SushiModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SushiModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SushiModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Tovar.cs">
-      <DependentUpon>SushiModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Towar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -232,20 +214,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\SushiModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SushiModel.edmx</DependentUpon>
-      <LastGenOutput>SushiModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\SushiModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SushiModel.edmx</DependentUpon>
-      <LastGenOutput>SushiModel.cs</LastGenOutput>
-    </Content>
     <Content Include="robots.txt" />
     <Content Include="Scripts\abct.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -253,13 +224,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\SushiModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SushiModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\SushiModel.edmx.diagram">
-      <DependentUpon>SushiModel.edmx</DependentUpon>
-    </Content>
+    <None Include="Properties\PublishProfiles\sushilar - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\sushilar - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
