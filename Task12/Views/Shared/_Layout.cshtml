@@ -30,7 +30,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Продукты", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Админка", "Index", "Towars")</li>
+                    <li>@Html.ActionLink("Войти", "Index", "Towars")</li>
                 </ul>
                 @*@Html.Partial("_LoginPartial")*@
             </div>
@@ -141,6 +141,32 @@
                 })(); //-->
             </script>
             <!-- End ZERO.kz -->
+
+            <div class="fb-share-button" data-href="http://instinctcoder.com" data-width="100px" data-type="box_count"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://instinctcoder.com" data-text="Programming sharing portal" data-via="instinctcoder" data-count="vertical">Tweet</a>
+            <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60" data-href="http://www.instinctcoder.com"></div>
+
+            <script>
+                (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1396861977224095";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+           
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            
+
+            <!-- Place this tag after the last share tag. -->
+            <script type="text/javascript">
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/platform.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+            </script>
 
     </div>
 
